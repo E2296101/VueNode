@@ -7,7 +7,7 @@ module.exports = app => {
 
     router.post('/', product.create)
 
-    router.get('/:id', product.findOne)
+   /*  router.get('/:id', product.findOne) */
 
     router.put('/:id', product.update)
     
