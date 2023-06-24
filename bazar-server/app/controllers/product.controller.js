@@ -34,18 +34,7 @@ exports.create = (req, res) => {
    })
 }
 
-exports.findOne = (req, res) => {
-    const id = req.params.id
-    Product.findByPk(id)
-    .then(data => {
-        res.send(data)
-    }) 
-    .catch(e => {
-        res.status(500).send({
-            message: 'could not find the data'
-        })
-    })
-}
+
 
 exports.update = (req, res) => {
     const id = req.params.id
